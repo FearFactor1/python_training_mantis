@@ -46,7 +46,7 @@ class JamesHelper:
 
 
         def create_user(self, username, password):
-            self.telnet.write("adduser %s %s\n" % (username, password))
+            self.write("adduser %s %s\n" % (username, password))
             self.read_until("User %s added" % username)
 
 
